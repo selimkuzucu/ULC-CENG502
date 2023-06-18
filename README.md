@@ -220,7 +220,7 @@ In conclusion, providing code for the proposed methods was not an easy task cons
 - [1] Huang Y, Bai B, Zhao S, Bai K, Wang F. Uncertainty-aware learning against label noise on imbalanced datasets. InProceedings of the AAAI Conference on Artificial Intelligence 2022 Jun 28 (Vol. 36, No. 6, pp. 6960-6969).
 - [2] Li J, Socher R, Hoi SC. Dividemix: Learning with noisy labels as semi-supervised learning. arXiv preprint arXiv:2002.07394. 2020 Feb 18.
 - [3] Kendall A, Gal Y. What uncertainties do we need in bayesian deep learning for computer vision?. Advances in neural information processing systems. 2017;30.
-- [4] gal and ghahramani
+- [4] Gal Y, Ghahramani Z. Dropout as a bayesian approximation: Representing model uncertainty in deep learning. Ininternational conference on machine learning 2016 Jun 11 (pp. 1050-1059). PMLR.
 - [5] mixmatch
 
 # Contact
