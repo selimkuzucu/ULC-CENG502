@@ -188,8 +188,9 @@ In conclusion, providing code for the proposed methods was not an easy task cons
 [2] dividemix - thanks for the implementation
 [3] kendall and gal
 [4] gal and ghahramani
+[5] mixmatch
 
 # Contact
-Please don't hesitate to ask any questions!
+Please don't hesitate to ask any questions and correct me if I made any mistakes with the implementation!
 
 Selim Kuzucu - selim686kuzucu@gmail.com
