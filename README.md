@@ -143,7 +143,12 @@ The pseudocode for the DivideMix[REF], provided here for the sake of highlightin
 
 ## 3.1. Experimental setup
 
-@TODO: Describe the setup of the original paper and whether you changed any settings.
+In the paper, training settings are desribed as follows:
+
+<p align="center">
+  We train the network using SGD with a momentum of 0.9 for 300 epochs; warm-up 30 epochs for CIFAR-10 and 40 epochs for CIFAR-100. In the Cloth- ing1M experiments, we use ResNet-50 with ImageNet pre- trained weights, following the previous work (Li, Socher, and Hoi 2020). The warm-up period is 1 epoch for Cloth- ing1M. 𝜏 is set as 0.6 for 90% noise ratio and 0.5 for oth- ers. 𝜆𝑢 is validated from {0, 25, 50, 150}. Generally, the hy- perparameters setting for MixMatch is inherited from Di- videMix without heavily tuning, because the SSL part is not our focus and can be replaced by other alternatives. We leverage MC-dropout [REF] to esti- mate uncertainty, setting 𝑇 to 10 and the dropout rate to 0.3. The uncertainty ratio 𝑟 is set as 0.1 to obtain the final clean probability.
+</p>
+
 
 ## 3.2. Running the code
 
