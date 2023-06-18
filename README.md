@@ -48,6 +48,12 @@ $\omega_i = (1-\epsilon)r p(\mu_{j0} | l_i)^{1-r}$
 
 where $\epsilon_i$ corresponds to the epistemic uncertainty for that sample and $r$ being a hyperparameter to weight the uncertainty and the probability from GMM.
 
+![Screenshot 2023-06-18 at 21 41 25](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/1d7bbae3-c668-4981-b250-34073a4ec724)
+
+The pseudocode for the EULC module of the proposed framework
+
+
+### 2.1.2 Aleatoric Uncertainty-aware Learning (AUL)
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
