@@ -137,7 +137,7 @@ Figure 4. Objectives for labeled and unlabeled samples respectively from DivideM
 
 Figure 5. The pseudocode for the DivideMix[REF], provided here for the sake of highlighting the similarities
 
-
+### A big thanks for the  [DivideMix GitHub repository](https://github.com/LiJunnan1992/DivideMix) for providing the necessarly SSL code, the MixMatch code and the noise-injecting dataloaders!
 
 # 3. Experiments and results
 
@@ -217,12 +217,11 @@ In conclusion, providing code for the proposed methods was not an easy task cons
 
 # 5. References
 
-@TODO: Provide your references here.
-[1] original paper
-[2] dividemix - thanks for the implementation
-[3] kendall and gal
-[4] gal and ghahramani
-[5] mixmatch
+- [1] Huang Y, Bai B, Zhao S, Bai K, Wang F. Uncertainty-aware learning against label noise on imbalanced datasets. InProceedings of the AAAI Conference on Artificial Intelligence 2022 Jun 28 (Vol. 36, No. 6, pp. 6960-6969).
+- [2] Li J, Socher R, Hoi SC. Dividemix: Learning with noisy labels as semi-supervised learning. arXiv preprint arXiv:2002.07394. 2020 Feb 18.
+- [3] kendall and gal
+- [4] gal and ghahramani
+- [5] mixmatch
 
 # Contact
 Please don't hesitate to ask any questions and correct me if I made any mistakes with the implementation!
