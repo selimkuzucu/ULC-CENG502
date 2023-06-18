@@ -26,8 +26,10 @@ Motivated by these shortcomings, the authors propose a novel framework, "Uncerta
 
 ![Screenshot 2023-06-18 at 21 32 54](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/5c838db7-b2fd-44dd-8fa4-1d300350478a)
 
+The pseudocode for the proposed method, coined as "Uncertainty-aware Label Correction (ULC)"
 
-- The proposed method, coined as "Uncertainty-aware Label Correction (ULC)" has two major novelties:
+
+- Uncertainty-aware Label Correction (ULC) has two major novelties:
 - **"Epistemic Uncertainty-Aware Class-specific Noise Modeling (EUCS)"** module and the **"Aleatoric Uncertainty-aware Learning (AUL)"**
 
 ### 2.1.1 Epistemic Uncertainty-Aware Class-specific Noise Modeling (EUCS)
