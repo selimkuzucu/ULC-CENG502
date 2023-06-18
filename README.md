@@ -30,7 +30,7 @@ Motivated by these shortcomings, the authors propose a novel framework, "Uncerta
 
 </p>
 
-The pseudocode for the proposed method, coined as "Uncertainty-aware Label Correction (ULC)"
+Figure 1. The pseudocode for the proposed method, coined as "Uncertainty-aware Label Correction (ULC)"
 
 
 
@@ -61,7 +61,7 @@ where $y_i^{~}$ is the label possibly with noise and  $\hat{y_i} = \frac{1}{T} \
 
 ![Screenshot 2023-06-18 at 21 41 25](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/1d7bbae3-c668-4981-b250-34073a4ec724)
 
-The pseudocode for the EULC module of the proposed framework
+Figure 2. The pseudocode for the EULC module of the proposed framework
 
 
 
@@ -108,7 +108,7 @@ where $X'$ stands for the labeled inputs (following MixMatch[REF] augmentation),
 
 ![Screenshot 2023-06-19 at 00 21 58](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/dfb4afce-5dd3-4be6-8c0d-9efe0f517d96)
 
-The pseudocode for the AUL module of the proposed framework
+Figure 3. The pseudocode for the AUL module of the proposed framework
 
 
 
@@ -123,7 +123,7 @@ The pseudocode for the AUL module of the proposed framework
 
 ![Screenshot 2023-06-19 at 00 27 16](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/d2215987-08b2-4c96-a012-b88fa593d1a6)
 
-Objectives for labeled and unlabeled samples respectively from DivideMix[REF]
+Figure 4. Objectives for labeled and unlabeled samples respectively from DivideMix[REF]
 
 
 
@@ -135,7 +135,7 @@ Objectives for labeled and unlabeled samples respectively from DivideMix[REF]
   
 ![Screenshot 2023-06-19 at 00 31 16](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/ec35bd1e-b3b4-4b2b-9e1c-f5232ce47842)
 
-The pseudocode for the DivideMix[REF], provided here for the sake of highlighting the similarities
+Figure 5. The pseudocode for the DivideMix[REF], provided here for the sake of highlighting the similarities
 
 
 
@@ -149,7 +149,7 @@ In the paper, training settings are desribed as follows:
   We train the network using SGD with a momentum of 0.9 for 300 epochs; warm-up 30 epochs for CIFAR-10 and 40 epochs for CIFAR-100. In the Cloth- ing1M experiments, we use ResNet-50 with ImageNet pre-trained weights. The warm-up period is 1 epoch for Clothing1M. 𝜏 is set as 0.6 for 90% noise ratio and 0.5 for oth- ers. 𝜆𝑢 is validated from {0, 25, 50, 150}. Generally, the hyperparameters setting for MixMatch is inherited from DivideMix without heavily tuning, because the SSL part is not our focus and can be replaced by other alternatives. We leverage MC-dropout [REF] to estimate uncertainty, setting 𝑇 to 10 and the dropout rate to 0.3. The uncertainty ratio 𝑟 is set as 0.1 to obtain the final clean probability.
 </p>
 
-I only performed experiments with the synthetic CIFAR-10 and imbalanced CIFAR-10 datasets. For them, I did not change any training settings. One significant point to note is that normally MC Dropout [REF] is used with setting 𝑇 $\in [30, 100]$ while the authors choose 10. I did not change this part either but this point may have significant effects on the reproducibility of the proposed approach as it directly effects both of the proposed modules.
+I only performed experiments with the synthetic CIFAR-10 and imbalanced CIFAR-10 datasets. For them, I did not change any training settings. One significant point to note is that normally MC Dropout [REF] is used with setting 𝑇 $\in [30, 100]$ while the authors choose 10. I did not change this part either but this point may have significant effects on the reproducibility of the proposed approach as it directly effects both of the proposed modules. Finally, the backbone is chosen as the (PreAct) ResNet18 for the entirety of the CIFAR-10 experiments.
 
 
 ## 3.2. Running the code
@@ -174,7 +174,23 @@ One can directly call the main_cifar.py file through passing the --data_path arg
 
 ## 3.3. Results
 
-@TODO: Present your results and compare them to the original paper. Please number your figures & tables as if this is a paper.
+Directly from the paper, synthetic (balanced) CIFAR-10 results look like the following:
+
+![Screenshot 2023-06-19 at 01 02 51](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/52210294-1ade-44e6-bcb8-554f7d8e51d0)
+
+Figure 6. Synthetic CIFAR-10 Results of ULC compared to other well-known methods (Table 1 from the paper)
+
+
+| CIFAR-10 (Sym.)     | 20%  | 50%  | 80%  | 90%  |
+|---------------------|------|------|------|------|
+| ULC-Reprod. (Best)  |      |      |      |      |
+| ULC-Reprod. (Last)  |      |      |      |      |
+
+Figure 7. Synthetic CIFAR-10 Results w/ Symmetric Noise of Reproduction ULC
+
+
+
+
 
 # 4. Conclusion
 
