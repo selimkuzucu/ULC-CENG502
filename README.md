@@ -93,6 +93,10 @@ where $\hat{v}_i(;)$ stands for the $i^{th}$ logit, $\delta^{x_i}$ stands for th
   $l_x = \frac{-1}{X'} \sum_{x_i, y_i} (y_i)^{T} log \frac{1}{T} \sum_t \hat{y_{it}}(x_i ; W, \sigma^{x_i}, \sigma^{Y})$
 </p>
 
+<p align="center">
+  $l_u = \frac{1}{U'} \sum_{x_i, y_i} || y_i \frac{1}{T} \sum_t \hat{y_{it}}(x_i ; W, \sigma^{x_i}, \sigma^{Y}) ||^2_2$
+</p>
+
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
