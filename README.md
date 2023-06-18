@@ -178,7 +178,8 @@ One can directly call the main_cifar.py file through passing the --data_path arg
 
 # 4. Conclusion
 
-@TODO: Discuss the paper in relation to the results in the paper and your results.
+In conclusion, providing code for the proposed methods was not an easy task considering the significant prerequisite chain required to appreciate the work. Some of the results could not be reproduced with the same level of success as presented in the paper. This may be primarily due to the fact that the method itself is quite stochastic in nature, whether estimating the epistemic uncertainties with _only 10 MC sampling passes_ or obtaining outputs for learned loss atenuation based on aleatoric uncertainty _again with only 10 MC sampling passes_. Furthermore, even though I believe that the paper lies within an interesting intersection of uncertainty quantification, imbalanced learning and learning under noise, the proposed method is quite expensive especially for the larger datasets. Separately running MC Dropout [REF] for each and every single sample coupled with the expensive strategy of simultaneously training two networks produces a significant computational overhead, which disallowed me from reproducing more experiments from the work. 
+
 
 # 5. References
 
