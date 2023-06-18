@@ -96,8 +96,12 @@ The pseudocode for the EULC module of the proposed framework
 # 5. References
 
 @TODO: Provide your references here.
+[1] original paper
+[2] dividemix - thanks for the implementation
+[3] kendall and gal
+[4] gal and ghahramani
 
 # Contact
+Please don't hesitate to ask any questions!
 
-@TODO: Provide your names & email addresses and any other info with which people can contact you.
-
+Selim Kuzucu - selim686kuzucu@gmail.com
