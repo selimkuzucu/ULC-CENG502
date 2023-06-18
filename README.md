@@ -48,6 +48,13 @@ $\omega_i = (1-\epsilon)r p(\mu_{j0} | l_i)^{1-r}$
 
 where $\epsilon_i$ corresponds to the epistemic uncertainty for that sample and $r$ being a hyperparameter to weight the uncertainty and the probability from GMM.
 
+-The authors then apply thresholding based on hyperparameter $\tau$ to decide which samples are considered clean and which samples are considered noisy. At this stage, the noisy samples are discarded as being unlabeled.
+- Finally, label of the cleaned samples are also refined based on the following equation:
+
+<p align="center">
+$y_i = \omega_i y_i^{~} + (1-\omega_i) \hat{y_i}$
+</p>
+
 ![Screenshot 2023-06-18 at 21 41 25](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/1d7bbae3-c668-4981-b250-34073a4ec724)
 
 The pseudocode for the EULC module of the proposed framework
