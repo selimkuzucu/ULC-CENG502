@@ -105,6 +105,14 @@ where $X'$ stands for the labeled inputs, $l_x$ stands for the labeled inputs' o
   $l_c = l_x + \lambda_u l_u$
 </p>
 
+
+![Screenshot 2023-06-19 at 00 21 58](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/dfb4afce-5dd3-4be6-8c0d-9efe0f517d96)
+
+The pseudocode for the AUL module of the proposed framework
+
+
+
+
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
