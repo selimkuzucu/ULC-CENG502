@@ -94,7 +94,15 @@ where $\hat{v}_i(;)$ stands for the $i^{th}$ logit, $\delta^{x_i}$ stands for th
 </p>
 
 <p align="center">
-  $l_u = \frac{1}{U'} \sum_{x_i, y_i} || y_i \frac{1}{T} \sum_t \hat{y_{it}}(x_i ; W, \sigma^{x_i}, \sigma^{Y}) ||^2_2$
+  $l_u = \frac{1}{U'} \sum_{x_i, y_i} || y_i - \frac{1}{T} \sum_t \hat{y_{it}}(x_i ; W, \sigma^{x_i}, \sigma^{Y}) ||^2_2$
+</p>
+
+where $X'$ stands for the labeled inputs, $l_x$ stands for the labeled inputs' objective, , $U'$ stands for the unlabeled dataset, $l_u$ stands for the unlabeled inputs' objective, and $\hat{y_{it}}$ stands for the softmax output of the $t^{th}$ sampling pass from the network.
+
+- Introducing a balancing hyperparameter $\lambda_u$ between these two objectives and combining them yields the objective that the paper utilizes:
+
+<p align="center">
+  $l_c = l_x + \lambda_u l_u$
 </p>
 
 ## 2.2. Our interpretation 
