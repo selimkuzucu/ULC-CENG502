@@ -48,7 +48,7 @@ $\omega_i = (1-\epsilon)r p(\mu_{j0} | l_i)^{1-r}$
 
 where $\epsilon_i$ corresponds to the epistemic uncertainty for that sample and $r$ being a hyperparameter to weight the uncertainty and the probability from GMM.
 
--The authors then apply thresholding based on hyperparameter $\tau$ to decide which samples are considered clean and which samples are considered noisy. At this stage, the noisy samples are discarded as being unlabeled.
+- The authors then apply thresholding based on hyperparameter $\tau$ to decide which samples are considered clean and which samples are considered noisy. At this stage, the noisy samples are discarded as being unlabeled.
 - Finally, label of the cleaned samples are also refined based on the following equation:
 
 <p align="center">
