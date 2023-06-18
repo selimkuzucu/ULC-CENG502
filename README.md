@@ -137,7 +137,7 @@ Figure 4. Objectives for labeled and unlabeled samples respectively from DivideM
 
 Figure 5. The pseudocode for the DivideMix[REF], provided here for the sake of highlighting the similarities
 
-### A big thanks for the  [DivideMix GitHub repository](https://github.com/LiJunnan1992/DivideMix) for providing the necessarly SSL code, the MixMatch code and the noise-injecting dataloaders!
+**A big thanks for the  [DivideMix GitHub repository](https://github.com/LiJunnan1992/DivideMix) for providing the necessarly SSL code, the MixMatch code and the noise-injecting dataloaders!**
 
 # 3. Experiments and results
 
