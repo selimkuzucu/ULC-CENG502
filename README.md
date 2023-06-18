@@ -97,7 +97,7 @@ where $\hat{v}_i(;)$ stands for the $i^{th}$ logit, $\delta^{x_i}$ stands for th
   $l_u = \frac{1}{U'} \sum_{x_i, y_i} || y_i - \frac{1}{T} \sum_t \hat{y_{it}}(x_i ; W, \sigma^{x_i}, \sigma^{Y}) ||^2_2$
 </p>
 
-where $X'$ stands for the labeled inputs, $l_x$ stands for the labeled inputs' objective, , $U'$ stands for the unlabeled dataset, $l_u$ stands for the unlabeled inputs' objective, and $\hat{y_{it}}$ stands for the softmax output of the $t^{th}$ sampling pass from the network.
+where $X'$ stands for the labeled inputs (following MixMatch[REF] augmentation), $l_x$ stands for the labeled inputs' objective, , $U'$ stands for the unlabeled input (following MixMatch[REF] augmentation), $l_u$ stands for the unlabeled inputs' objective, and $\hat{y_{it}}$ stands for the softmax output of the $t^{th}$ sampling pass from the network.
 
 - Introducing a balancing hyperparameter $\lambda_u$ between these two objectives and combining them yields the objective that the paper utilizes:
 
@@ -115,7 +115,15 @@ The pseudocode for the AUL module of the proposed framework
 
 ## 2.2. Our interpretation 
 
-@TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
+- First and foremost, this paper has strict prerequisites of understanding some other work such as DivideMix[REF], Kendall[REF], MixMatch[REF], MC Dropout[REF].
+- This is primarily due to the fact that crucial procedures such as epistemic uncertainty quantification and/or loss attenuation are not explained in a detailed manner and the authors rather refer the reader to the relevant citations.
+- Furthermore, the structure of the objective functions for both the labeled and unlabeled samples do not seem trivial from a first sight but makes much more sense after carefully reading DivideMix[REF] as their structure and principle is extremely similar to it.
+
+![Screenshot 2023-06-19 at 00 27 16](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/d2215987-08b2-4c96-a012-b88fa593d1a6)
+
+Objectives for labeled and unlabeled samples respectively from DivideMix[REF]
+
+
 
 # 3. Experiments and results
 
