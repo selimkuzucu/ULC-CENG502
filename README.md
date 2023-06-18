@@ -33,6 +33,8 @@ Motivated by these shortcomings, the authors propose a novel framework, "Uncerta
 The pseudocode for the proposed method, coined as "Uncertainty-aware Label Correction (ULC)"
 
 
+
+
 - Uncertainty-aware Label Correction (ULC) has two major novelties:
 - **"Epistemic Uncertainty-Aware Class-specific Noise Modeling (EUCS)"** module and the **"Aleatoric Uncertainty-aware Learning (AUL)"**
 
@@ -62,7 +64,13 @@ where $y_i^{~}$ is the label possibly with noise and  $\hat{y_i} = \frac{1}{T} \
 The pseudocode for the EULC module of the proposed framework
 
 
+
+
 ### 2.1.2 Aleatoric Uncertainty-aware Learning (AUL)
+
+- In this second module, the authors aim to utilize an objective akin to the one proposed by Kendall [REF].
+- Specifically, the authors aim to model aleatoric uncertainty through logit corruption with Gaussian noise, which leads to a learned loss attenuation as described more in detail in Kendall [REF]. This learned loss attenuation is particularly helpful while learning against noise and providing robustness as it attenuates the effects of corrupted labels.
+- Formally, 
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
