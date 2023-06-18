@@ -154,7 +154,16 @@ I only performed experiments with the synthetic CIFAR-10 and imbalanced CIFAR-10
 
 ## 3.2. Running the code
 
-@TODO: Explain your code & directory structure and how other people can run it.
+The directory structure looks like the following:
+
+├── main_cifar.py
+├── dataloader_cifar.py
+├── PreResNet.py
+└── requirements.txt
+
+One can directly call the main_cifar.py file through passing the --dataset_path argument to it:
+
+
 
 ## 3.3. Results
 
