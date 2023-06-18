@@ -87,6 +87,12 @@ where $\hat{v}_i(;)$ stands for the $i^{th}$ logit, $\delta^{x_i}$ stands for th
 
 - Furthermore, the authors assume that both $\delta^{x_i}$ and $\delta^y$ are drawn from their respective Gaussian distributions (with the assumption of independence between them) and reserve an additional head from the network to effectively predict and learn $\sigma^{x_i}$ of the Gaussian that we sample the $\delta^{x_i}$ from.
 
+- Finally, for the objective part, the authors leverage the aforementioned bulletpoints to define the following objectives for the labeled and unlabeled samples:
+
+<p align="center">
+  $l_x = \frac{-1}{X'} \sum_{x_i, y_i} (y_i)^{T} log \frac{1}{T} \sum_t \hat{y_{it}}(x_i ; W, \sigma^{x_i}, \sigma^{Y})$
+</p>
+
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
