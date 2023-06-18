@@ -119,12 +119,23 @@ The pseudocode for the AUL module of the proposed framework
 - This is primarily due to the fact that crucial procedures such as epistemic uncertainty quantification and/or aleatoric uncertainty-based loss attenuation are not explained in a detailed manner and the authors rather refer the reader to the relevant citations.
 - Furthermore, the structure of the objective functions for both the labeled and unlabeled samples do not seem trivial from a first sight but makes much more sense after carefully reading DivideMix[REF] as their structure and principle is extremely similar to it.
 
+
+
 ![Screenshot 2023-06-19 at 00 27 16](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/d2215987-08b2-4c96-a012-b88fa593d1a6)
 
 Objectives for labeled and unlabeled samples respectively from DivideMix[REF]
 
+
+
+
 - Other important details, such as the co-teaching strategy with two networks, the semi-supervised learning strategy for the unlabeled samples and many more design choices are explained in a more detailed manner in the works cited by the authors. Since this work is not the one to introduce them, neither the authors of the paper nor this repository's discussion sections will be providing details on those parts.
+
 - Finally, the overall pipeline and the algorithm borrows heavily from the DivideMix[REF] work, while also introducing many novelties to it at the same time, especially from the uncertainty quantification literature. Hence, my suggestion to anyone willing to use this repository is to first thoroughly go through the aforementioned citations in the first bulletpoint of this section.
+
+  
+![Screenshot 2023-06-19 at 00 31 16](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/ec35bd1e-b3b4-4b2b-9e1c-f5232ce47842)
+
+The pseudocode for the DivideMix[REF], provided here for the sake of highlighting the similarities
 
 
 
