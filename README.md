@@ -181,6 +181,9 @@ Directly from the paper, synthetic (balanced) CIFAR-10 results look like the fol
 Figure 6. Synthetic CIFAR-10 Results of ULC compared to other well-known methods (Table 1 from the paper)
 
 
+
+
+
 | CIFAR-10 (Sym.)     | 20%  | 50%  | 80%  | 90%  |
 |---------------------|------|------|------|------|
 | ULC-Reprod. (Best)  |      |      |      |      |
@@ -189,6 +192,21 @@ Figure 6. Synthetic CIFAR-10 Results of ULC compared to other well-known methods
 Figure 7. Synthetic CIFAR-10 Results w/ Symmetric Noise of Reproduction ULC
 
 
+
+
+![Screenshot 2023-06-19 at 01 02 51](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/de5f784e-bdfd-4125-a826-438c07c2a65a)
+
+Figure 8. Synthetic Imbalanced CIFAR-10 Results of ULC compared to other well-known methods (Table 2 from the paper)
+
+
+
+| CIFAR-10 (Sym.)     | 1:5 & 20%  | 1:5 & 50%  | 1:10 & 20%  | 1:10 & 50%  |
+|---------------------|------------|------------|-------------|-------------|
+| ULC-Reprod. (Best)  |            |            |             |             |
+| ULC-Reprod. (Last)  |            |            |             |             |
+
+
+Figure 7.  Synthetic Imbalanced CIFAR-10 Results w/ Symmetric Noise of Reproduction ULC
 
 
 
