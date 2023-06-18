@@ -55,6 +55,8 @@ where $\epsilon_i$ corresponds to the epistemic uncertainty for that sample and 
 $y_i = \omega_i y_i^{~} + (1-\omega_i) \hat{y_i}$
 </p>
 
+where $y_i^{~}$ is the label possibly with noise and  $\hat{y_i} = \frac{1}{T} \sum_{t=1}^T softmax(f(x_i, W))$ 
+
 ![Screenshot 2023-06-18 at 21 41 25](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/1d7bbae3-c668-4981-b250-34073a4ec724)
 
 The pseudocode for the EULC module of the proposed framework
