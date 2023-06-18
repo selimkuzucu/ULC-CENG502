@@ -1,20 +1,33 @@
-# Paper title [@TODO: Change]
+# Uncertainty-Aware Learning Against Label Noise on Imbalanced Datasets
 
 This readme file is an outcome of the [CENG502 (Spring 2023)](https://ceng.metu.edu.tr/~skalkan/ADL/) project for reproducing a paper without an implementation. See [CENG502 (Spring 20223) Project List](https://github.com/CENG502-Projects/CENG502-Spring2023) for a complete list of all paper reproduction projects.
 
 # 1. Introduction
 
-@TODO: Introduce the paper (inc. where it is published) and describe your goal (reproducibility).
+Authored by Yingsong Huang, Bing Bai, Shengwei Zhao, Kun Bai and Fei Wang, "Uncertainty-Aware Learning Against Label Noise on Imbalanced Datasets" was published in AAAI 2022. The goal of the paper is to come up with a novel method to overcome the drawbacks of noise and class imbalance, especially when they co-exist. 
+
+My goal with this repository is to provide a code for the presented novel technique and reproduce some of the results.
 
 ## 1.1. Paper summary
 
-@TODO: Summarize the paper, the method & its contributions in relation with the existing literature.
+Since a significant portion of the real-life applications involve dealing with noisy labels,learning against label noise is a common challenge in tne machine learning literature. Recent literature aims to address this problem through considering the output probabilities of the models and/or the loss values to separate clean and noisy samples with the aim of treating them differently.
+
+However, these techniques fail to fully address some of the most important real-life cases especially in the presence of class imbalance, even when the imbalance rate is in the range of 1:5.
+
+The authors first conjecture that this might be due to the fact that the existing literature fails to consider the predictive uncertainty of the model's while solely focusing on the output probabilities.
+
+Furthermore, the authors claim that these existing class-agnostic approaches are not working well on imbalanced datasets as inter-class loss distribution varies significantly across classes in imbalanced datasets.
+
+Motivated by these shortcomings, the authors propose a novel framework, "Uncertainty-aware Label Correction (ULC)", to address these gaps.
 
 # 2. The method and my interpretation
 
 ## 2.1. The original method
 
-@TODO: Explain the original method.
+- Existing methods, such as DivideMix [REF], directly consider probabilities while thresholding for which samples might be clean and which samples might be noisy.
+- Specifically, if the output probability of a sample is lower than a certain threshold (threshold being a hyperparameter itself), then that particular sample is considered noisy and if it is not, then it is considered to be clean.
+- The proposed method, coined as "Uncertainty-aware Label Correction (ULC)" proposes to utilize both epistemic uncertainty _and_ the output probability while making this decision.
+- Specifically, 
 
 ## 2.2. Our interpretation 
 
@@ -45,3 +58,4 @@ This readme file is an outcome of the [CENG502 (Spring 2023)](https://ceng.metu.
 # Contact
 
 @TODO: Provide your names & email addresses and any other info with which people can contact you.
+
