@@ -35,7 +35,7 @@ The pseudocode for the proposed method, coined as "Uncertainty-aware Label Corre
 ### 2.1.1 Epistemic Uncertainty-Aware Class-specific Noise Modeling (EUCS)
 - First of these is the **"Epistemic Uncertainty-Aware Class-specific Noise Modeling (EUCS)"** module. With this module, the authors aim to fit the inter-class discrepancy on the loss distribution.
 - Initially, the authors obtain the epistemic uncertainty estimations for each of the samples through utilizing MC Dropout [REF]. With MC Dropout, _T_ stochastic forward passes are performed with dropout enabled for each of the input samples during the test time. Following obtaining the output probabilities from each of these passes, taking their entropy and then normalizing it would be yielding the epistemic uncertainty for that particular sample.
-- After the epistemic uncertainty estimation, following the DivideMix[REF]'s approach, the authors fit a GMM with to the each class's loss distribution, then compute the probability of obtainin
+- After the epistemic uncertainty estimation, the authors fit a GMM with to the each class's loss distribution, then compute the probability of having the mean of the component with the lower $\mu$ given each samples' loss, i.e $p(\mu_{j0} | l_i)$ for class j and sample i.
 
 ## 2.2. Our interpretation 
 
