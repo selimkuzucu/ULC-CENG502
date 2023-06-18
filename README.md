@@ -69,8 +69,14 @@ The pseudocode for the EULC module of the proposed framework
 ### 2.1.2 Aleatoric Uncertainty-aware Learning (AUL)
 
 - In this second module, the authors aim to utilize an objective akin to the one proposed by Kendall [REF].
+- The authors claim that this module is particularly important as the noise modeling achieved by the EULC module is not sufficient to account for the residual noise that may contribute to overfitting in certain cases.
 - Specifically, the authors aim to model aleatoric uncertainty through logit corruption with Gaussian noise, which leads to a learned loss attenuation as described more in detail in Kendall [REF]. This learned loss attenuation is particularly helpful while learning against noise and providing robustness as it attenuates the effects of corrupted labels.
-- Formally, 
+- Two different types of noise are considered with the assumption of independence between them: Instance-dependent noise and class-dependent noise. Formally, the corresponding corruption process can be observed from the following equation:
+
+<p align="center">
+  $\hat{v}_i(W) = \delta^{x_i}(W) + \delta^y f_{W}(x_i)   $
+</p>
+
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
