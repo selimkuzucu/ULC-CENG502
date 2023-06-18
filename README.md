@@ -79,6 +79,12 @@ The pseudocode for the EULC module of the proposed framework
 
 where $\hat{v}_i(;)$ stands for the $i^{th}$ logit, $\delta^{x_i}$ stands for the instance-dependent noise factor and $\delta^y$ stands for the class-dependent noise factor.
 
+- Then, these corrupted logits are passed through a softmax layer to obtain output proabilities:
+
+<p align="center">
+  $\hat{y_i} = softmax(\delta^{x_i}(W) + \delta^y f_{W}(x_i))$
+</p>
+
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
