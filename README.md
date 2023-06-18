@@ -74,10 +74,10 @@ The pseudocode for the EULC module of the proposed framework
 - Two different types of noise are considered with the assumption of independence between them: Instance-dependent noise and class-dependent noise. Formally, the corresponding corruption process can be observed from the following equation:
 
 <p align="center">
-  $\hat{v}_i(W) = \delta^{x_i}(W) + \delta^y f_{W}(x_i)   $
+  $\hat{v}_i(W) = \delta^{x_i}(W) + \delta^y f_{W}(x_i)$
 </p>
 
-where $\hat{v}_i(W)$ stands for the ith logit, $delta^{x_i}(\cdot)$ stands for the instance-dependent noise factor and $\delta^y f_{W}(\cdot)$ stands for the class-dependent noise factor.
+where $\hat{v}_i(;)$ stands for the $i^{th}$ logit, $\delta^{x_i}$ stands for the instance-dependent noise factor and $\delta^y$ stands for the class-dependent noise factor.
 
 ## 2.2. Our interpretation 
 
