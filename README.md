@@ -38,7 +38,9 @@ The pseudocode for the proposed method, coined as "Uncertainty-aware Label Corre
 - After the epistemic uncertainty estimation, the authors fit a GMM with to the each class's loss distribution, then compute the probability of having the mean of the component with the lower $\mu$ given each samples' loss, i.e $p(\mu_{j0} | l_i)$ for class j and sample i.
 - Based on these two steps, the authors then come up with the following equation to determine the probability of a given sample i being clean or noisy:
 
+<p align="center">
 $\omega_i = (1-\epsilon)r p(\mu_{j0} | l_i)^{1-r}$
+</p>
 
 where $\epsilon_i$ corresponds to the epistemic uncertainty for that sample and $r$ being a hyperparameter to weight the uncertainty and the probability from GMM.
 
