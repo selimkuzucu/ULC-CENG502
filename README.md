@@ -24,10 +24,9 @@ Motivated by these shortcomings, the authors propose a novel framework, "Uncerta
 
 ## 2.1. The original method
 
-- Existing methods, such as DivideMix [REF], directly consider probabilities while thresholding for which samples might be clean and which samples might be noisy.
-- Specifically, if the output probability of a sample is lower than a certain threshold (threshold being a hyperparameter itself), then that particular sample is considered noisy and if it is not, then it is considered to be clean.
-- The proposed method, coined as "Uncertainty-aware Label Correction (ULC)" proposes to utilize both epistemic uncertainty _and_ the output probability while making this decision.
-- Specifically, 
+- The proposed method, coined as "Uncertainty-aware Label Correction (ULC)" has two major novelties:
+- First of these is the **"Epistemic Uncertainty-Aware Class-specific Noise Modeling (EUCS)"** module. With this module, the authors aim to fit the inter-class discrepancy on the loss distribution.
+- 
 
 ## 2.2. Our interpretation 
 
