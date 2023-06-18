@@ -85,6 +85,8 @@ where $\hat{v}_i(;)$ stands for the $i^{th}$ logit, $\delta^{x_i}$ stands for th
   $\hat{y_i} = softmax(\delta^{x_i}(W) + \delta^y f_{W}(x_i))$
 </p>
 
+- Furthermore, the authors assume that both $\delta^{x_i}$ and $\delta^y$ are drawn from their respective Gaussian distributions (with the assumption of independence between them) and reserve an additional head from the network to effectively predict and learn $\sigma^{x_i}$ of the Gaussian that we sample the $\delta^{x_i}$ from.
+
 ## 2.2. Our interpretation 
 
 @TODO: Explain the parts that were not clearly explained in the original paper and how you interpreted them.
