@@ -24,7 +24,11 @@ Motivated by these shortcomings, the authors propose a novel framework, "Uncerta
 
 ## 2.1. The original method
 
+<p align="center">
+
 ![Screenshot 2023-06-18 at 21 32 54](https://github.com/selimkuzucu/ULC-CENG502/assets/56355561/5c838db7-b2fd-44dd-8fa4-1d300350478a)
+
+<\p>
 
 The pseudocode for the proposed method, coined as "Uncertainty-aware Label Correction (ULC)"
 
