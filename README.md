@@ -164,12 +164,10 @@ The directory structure looks like the following:
 └── requirements.txt
 ```
 
-One can directly call the main_cifar.py file through passing the --data_path argument to it:
+One can directly call the main_cifar.py file through passing the --data_path argument to it (same goes for the imbalanced versions of CIFAR-10, the code will be executing whichever directory, whether balanced or imbalanced passed to it):
 
 ```
-<p align="center">
   python3 main_cifar.py --data_path data/cifar-10-batches-py
-</p>
 ```
 
 
