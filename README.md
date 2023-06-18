@@ -154,6 +154,7 @@ I only performed experiments with the synthetic CIFAR-10 and imbalanced CIFAR-10
 
 ## 3.2. Running the code
 
+First, please download the CIFAR-10 dataset and put it under a directory called ``` data/ ```
 The directory structure looks like the following:
 
 ```
@@ -163,7 +164,13 @@ The directory structure looks like the following:
 └── requirements.txt
 ```
 
-One can directly call the main_cifar.py file through passing the --dataset_path argument to it:
+One can directly call the main_cifar.py file through passing the --data_path argument to it:
+
+```
+<p align="center">
+  python3 main_cifar.py --data_path data/cifar-10-batches-py
+</p>
+```
 
 
 
