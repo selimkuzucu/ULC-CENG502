@@ -221,7 +221,7 @@ In conclusion, providing code for the proposed methods was not an easy task cons
 - [2] Li J, Socher R, Hoi SC. Dividemix: Learning with noisy labels as semi-supervised learning. arXiv preprint arXiv:2002.07394. 2020 Feb 18.
 - [3] Kendall A, Gal Y. What uncertainties do we need in bayesian deep learning for computer vision?. Advances in neural information processing systems. 2017;30.
 - [4] Gal Y, Ghahramani Z. Dropout as a bayesian approximation: Representing model uncertainty in deep learning. Ininternational conference on machine learning 2016 Jun 11 (pp. 1050-1059). PMLR.
-- [5] mixmatch
+- [5] Berthelot D, Carlini N, Goodfellow I, Papernot N, Oliver A, Raffel CA. Mixmatch: A holistic approach to semi-supervised learning. Advances in neural information processing systems. 2019;32.
 
 # Contact
 Please don't hesitate to ask any questions and correct me if I made any mistakes with the implementation!
